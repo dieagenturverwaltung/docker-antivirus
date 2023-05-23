@@ -3,6 +3,8 @@ MAINTAINER Dietrich Rordorf <dr@ediqo.com>
 
 USER root
 
+
+
 # copy assets to image
 COPY ./assets /usr/local
 
