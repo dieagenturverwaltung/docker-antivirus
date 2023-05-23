@@ -1,4 +1,4 @@
-FROM debian:jessie-slim
+FROM debian:buster-slim
 MAINTAINER Dietrich Rordorf <dr@ediqo.com>
 
 USER root
