@@ -21,6 +21,6 @@ then
             printf "  --> Scan report moved to /data/av/nok/${filename}\n"
         fi
     done
-    rm -rf "/data/av/quarantine/*"
+    rm -f "/data/av/quarantine"/*
     printf "Done with processing\n"
 fi

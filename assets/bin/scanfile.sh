@@ -3,7 +3,7 @@ now=`date +'%Y-%m-%d %T'`
 printf "[${now}]\n"
 
 # scan with ClamAV first (faster)
-clamscan -rio --enable-stats --move /data/av/quarantine /data/av/scan
+clamscan -rio --move /data/av/quarantine /data/av/scan
 
 # scan with maldet second, if file still in /data/av/scan
 files=$(shopt -s nullglob dotglob; echo /data/av/scan/*)

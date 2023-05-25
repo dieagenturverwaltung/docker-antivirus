@@ -7,6 +7,8 @@
 #  -t 0                          never timeout
 #  -e moved_to,close_write       only fire if a file is moved to or written into the watched directory
 #
+printf "Initial check if files already are there for processing\n"
+/usr/local/bin/scanner.sh
 printf "Waiting for changes to /data/av/queue ...\n"
 inotifywait -m -r -q -t 0 -e moved_to,close_write /data/av/queue |
 while read -r path action file; do
