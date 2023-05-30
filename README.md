@@ -1,5 +1,11 @@
 # rordi/docker-antivirus
 
+## Build
+
+```sh
+docker buildx build --platform=linux/amd64,linux/arm64 --push -t dieagenturverwaltung/docker-antivirus:stable .
+```
+
 ## Antivirus & Antimalware as a Microservice / as a Docker Container
 
 [![](https://images.microbadger.com/badges/image/rordi/docker-antivirus.svg)](https://microbadger.com/images/rordi/docker-antivirus "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/rordi/docker-antivirus.svg)](https://microbadger.com/images/rordi/docker-antivirus "Get your own version badge on microbadger.com")
